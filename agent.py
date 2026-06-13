@@ -10,7 +10,6 @@ import io
 from docx import Document
 import zipfile
 import base64
-from google.adk.agents import Agent
 
 load_dotenv()
 
@@ -213,14 +212,3 @@ def query_rag(question, top_k=5):
     )
     return response.text
 
-def search_documents(query: str) -> str:
-    """Search ingested enterprise documents and return relevant answers."""
-    return query_rag(query)
-
-root_agent = Agent(
-    model="gemini-2.5-flash",
-    name="enterprise_rag_agent",
-    instruction="""You are an enterprise document intelligence assistant at Tata Steel.
-Use search_documents to answer all questions. Always cite source document and page number.""",
-    tools=[search_documents]
-)
