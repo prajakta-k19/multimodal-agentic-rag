@@ -48,7 +48,7 @@ def describe_image(image_data, ext="png"):
         try:
             mime = "image/jpeg" if ext in ["jpg", "jpeg"] else f"image/{ext}"
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.5-flash",
                 contents=[{"parts": [
                     {"inline_data": {"mime_type": mime, "data": image_data}},
                     {"text": "Describe this image in detail. If it is a diagram or flowchart, explain each component and how they connect."}
