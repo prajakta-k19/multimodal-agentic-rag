@@ -207,7 +207,7 @@ def query_rag(question, top_k=5):
     ])
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.5-flash",
         contents=[{"parts": [{"text": f"Context:\n{context}\n\nQuestion: {question}\n\nAnswer strictly from context above."}]}]
     )
     return response.text
