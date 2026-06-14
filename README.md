@@ -1,3 +1,9 @@
+![Multimodal RAG](https://img.shields.io/badge/Multimodal-RAG-blue)
+![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-orange)
+![Pinecone](https://img.shields.io/badge/Pinecone-Vector%20DB-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![Python](https://img.shields.io/badge/Python-3.13-yellow)
+
 # Multimodal Agentic RAG System
 ### Enterprise Document Intelligence | Tata Steel SNTI Internship
 
