@@ -1,5 +1,5 @@
 ![Multimodal RAG](https://img.shields.io/badge/Multimodal-RAG-blue)
-![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-orange)
+![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-orange)
 ![Pinecone](https://img.shields.io/badge/Pinecone-Vector%20DB-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
 ![Python](https://img.shields.io/badge/Python-3.13-yellow)
@@ -17,7 +17,7 @@ A Multimodal Retrieval-Augmented Generation (RAG) system that reads enterprise d
 - 📄 Supports PDF, PPTX and DOCX formats
 - 🖼️ Understands images, flowcharts and diagrams using Gemini Vision
 - 🔍 Semantic search using Pinecone Vector Database
-- 🤖 Powered by Google Gemini 3.5 Flash
+- 🤖 Powered by Google Gemini 2.5 Flash
 - 💬 Natural language question answering
 - 📦 Batch processing for multiple documents
 - 🌐 Deployed on Streamlit Cloud
@@ -25,10 +25,9 @@ A Multimodal Retrieval-Augmented Generation (RAG) system that reads enterprise d
 ## 🛠️ Tech Stack
 | Tool | Purpose |
 |------|---------|
-| Google Gemini 3.5 Flash | Vision + Text understanding |
+| Google Gemini 2.5 Flash | Vision + Text understanding |
 | Gemini Embedding 001 | Text embeddings (768 dimensions) |
 | Pinecone | Cloud vector database |
-| ChromaDB | Local vector database |
 | PyMuPDF | PDF text and image extraction |
 | python-pptx | PowerPoint extraction |
 | python-docx | Word document extraction |
@@ -47,7 +46,6 @@ Text chunking + Embedding generation
 Store in Pinecone Vector Database
 ↓
 User Query → Semantic Search → Gemini answers
-
 ## 🔧 Setup & Installation
 
 ### 1. Clone the repository
@@ -64,7 +62,6 @@ pip install -r requirements.txt
 ### 3. Set up environment variables
 Create a `.env` file:
 GOOGLE_API_KEY=your_gemini_api_key
-
 PINECONE_API_KEY=your_pinecone_api_key
 
 ### 4. Run the app
