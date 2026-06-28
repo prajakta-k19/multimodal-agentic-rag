@@ -54,9 +54,9 @@ Built as part of the **Enterprise Intelligence Layer** project at **Tata Steel S
 ## 🏗️ Architecture — Mixture of Experts Pipeline
 
 ```
-User Query
-    │
-    ▼
+          User Query
+              │
+              ▼
 ┌─────────────────────────────┐
 │   Router / Orchestrator     │  ← Google ADK Agent
 │   Classifies query type     │
