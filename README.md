@@ -23,15 +23,15 @@ Built as part of the **Enterprise Intelligence Layer** project at **Tata Steel S
 
 ## 🚀 Features
 
-- 📄 **Multimodal ingestion** — PDF, PPTX, and DOCX with text and image extraction
-- 🖼️ **Gemini Vision** — auto-generates semantic descriptions for diagrams, flowcharts, and figures
-- 🤖 **Mixture of Experts (MoE)** — Router agent delegates to specialised sub-agents based on query type
-- 🔍 **Metadata-filtered retrieval** — each expert searches only its content type (text vs image chunks)
-- 🧠 **Multi-turn conversation memory** — follow-up questions retain context via ADK `InMemorySessionService`
-- ⚡ **Real-time streaming** — answers stream word by word like a native LLM interface
-- 🏷️ **Expert attribution** — every answer shows which expert (🔵 Text / 🟢 Visual / 🟡 Synthesis) responded
-- 📦 **Persistent vector store** — all ingested documents survive app restarts via Pinecone Cloud
-- 🌐 **Deployed on Streamlit Cloud**
+- **Multimodal ingestion** — PDF, PPTX, and DOCX with text and image extraction
+- **Gemini Vision** — auto-generates semantic descriptions for diagrams, flowcharts, and figures
+- **Mixture of Experts (MoE)** — Router agent delegates to specialised sub-agents based on query type
+- **Metadata-filtered retrieval** — each expert searches only its content type (text vs image chunks)
+- **Multi-turn conversation memory** — follow-up questions retain context via ADK `InMemorySessionService`
+- **Real-time streaming** — answers stream word by word like a native LLM interface
+- **Expert attribution** — every answer shows which expert (🔵 Text / 🟢 Visual / 🟡 Synthesis) responded
+- **Persistent vector store** — all ingested documents survive app restarts via Pinecone Cloud
+- **Deployed on Streamlit Cloud**
 
 ---
 
